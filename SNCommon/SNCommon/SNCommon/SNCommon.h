@@ -55,9 +55,9 @@ return _instance; \
 #import "SNDataKeeper.h"
 #import "SNDownLoader.h"
 
-#import "NSString+TextSize.h"
+
 #import "NSDate+Conver.h"
-#import "NSString+Hash.h"
+#import "NSString+Extension.h"
 
 
 
