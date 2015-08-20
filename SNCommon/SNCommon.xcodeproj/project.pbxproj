@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		59B0D2A11B3A9C3300F5D9CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B0D2A01B3A9C3300F5D9CC /* Person.m */; };
 		59BEB1F11B419C2A00051283 /* SNDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEB1F01B419C2A00051283 /* SNDownLoader.m */; };
-		59DD19AE1B405B3500D0B61B /* NSString+Hash.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DD19AD1B405B3500D0B61B /* NSString+Hash.m */; };
+		59DD19AE1B405B3500D0B61B /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DD19AD1B405B3500D0B61B /* NSString+Extension.m */; };
 		59F0D0391B37B783006C127A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D0381B37B783006C127A /* main.m */; };
 		59F0D03C1B37B783006C127A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D03B1B37B783006C127A /* AppDelegate.m */; };
 		59F0D03F1B37B783006C127A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D03E1B37B783006C127A /* ViewController.m */; };
@@ -19,7 +19,6 @@
 		59F0D0531B37B783006C127A /* SNCommonTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D0521B37B783006C127A /* SNCommonTests.m */; };
 		59F0D0661B37BD58006C127A /* SNFlashLight.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D0651B37BD58006C127A /* SNFlashLight.m */; };
 		59F0D06B1B38E13D006C127A /* SNRandomUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D06A1B38E13D006C127A /* SNRandomUtil.m */; };
-		59F0D0701B38F935006C127A /* NSString+TextSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D06F1B38F935006C127A /* NSString+TextSize.m */; };
 		59F0D0741B38FD44006C127A /* SNDataKeeper.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D0731B38FD44006C127A /* SNDataKeeper.m */; };
 		59F0D0771B3901E5006C127A /* NSDate+Conver.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D0761B3901E5006C127A /* NSDate+Conver.m */; };
 		59F0D0801B393CB4006C127A /* SNAleartUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F0D07F1B393CB4006C127A /* SNAleartUtil.m */; };
@@ -42,8 +41,8 @@
 		59B0D2A01B3A9C3300F5D9CC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		59BEB1EF1B419C2A00051283 /* SNDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDownLoader.h; sourceTree = "<group>"; };
 		59BEB1F01B419C2A00051283 /* SNDownLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDownLoader.m; sourceTree = "<group>"; };
-		59DD19AC1B405B3500D0B61B /* NSString+Hash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Hash.h"; sourceTree = "<group>"; };
-		59DD19AD1B405B3500D0B61B /* NSString+Hash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Hash.m"; sourceTree = "<group>"; };
+		59DD19AC1B405B3500D0B61B /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		59DD19AD1B405B3500D0B61B /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		59F0D0331B37B783006C127A /* SNCommon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SNCommon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		59F0D0371B37B783006C127A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		59F0D0381B37B783006C127A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,8 +60,6 @@
 		59F0D0651B37BD58006C127A /* SNFlashLight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNFlashLight.m; sourceTree = "<group>"; };
 		59F0D0691B38E13D006C127A /* SNRandomUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNRandomUtil.h; sourceTree = "<group>"; };
 		59F0D06A1B38E13D006C127A /* SNRandomUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNRandomUtil.m; sourceTree = "<group>"; };
-		59F0D06E1B38F935006C127A /* NSString+TextSize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextSize.h"; sourceTree = "<group>"; };
-		59F0D06F1B38F935006C127A /* NSString+TextSize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextSize.m"; sourceTree = "<group>"; };
 		59F0D0721B38FD44006C127A /* SNDataKeeper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDataKeeper.h; sourceTree = "<group>"; };
 		59F0D0731B38FD44006C127A /* SNDataKeeper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SNDataKeeper.m; sourceTree = "<group>"; };
 		59F0D0751B3901E5006C127A /* NSDate+Conver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Conver.h"; sourceTree = "<group>"; };
@@ -195,10 +192,8 @@
 		59F0D06D1B38F90A006C127A /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				59F0D06E1B38F935006C127A /* NSString+TextSize.h */,
-				59F0D06F1B38F935006C127A /* NSString+TextSize.m */,
-				59DD19AC1B405B3500D0B61B /* NSString+Hash.h */,
-				59DD19AD1B405B3500D0B61B /* NSString+Hash.m */,
+				59DD19AC1B405B3500D0B61B /* NSString+Extension.h */,
+				59DD19AD1B405B3500D0B61B /* NSString+Extension.m */,
 				59F0D0751B3901E5006C127A /* NSDate+Conver.h */,
 				59F0D0761B3901E5006C127A /* NSDate+Conver.m */,
 			);
@@ -339,10 +334,9 @@
 				59F0D0741B38FD44006C127A /* SNDataKeeper.m in Sources */,
 				59F0D0661B37BD58006C127A /* SNFlashLight.m in Sources */,
 				59B0D2A11B3A9C3300F5D9CC /* Person.m in Sources */,
-				59DD19AE1B405B3500D0B61B /* NSString+Hash.m in Sources */,
+				59DD19AE1B405B3500D0B61B /* NSString+Extension.m in Sources */,
 				59F0D03C1B37B783006C127A /* AppDelegate.m in Sources */,
 				59BEB1F11B419C2A00051283 /* SNDownLoader.m in Sources */,
-				59F0D0701B38F935006C127A /* NSString+TextSize.m in Sources */,
 				59F0D0391B37B783006C127A /* main.m in Sources */,
 				59F0D08D1B397371006C127A /* SNCommon.m in Sources */,
 				59F0D06B1B38E13D006C127A /* SNRandomUtil.m in Sources */,

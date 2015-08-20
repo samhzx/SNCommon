@@ -6,15 +6,16 @@
 //  Copyright (c) 2015年 sam. All rights reserved.
 //
 
-#import "NSString+Hash.h"
+#import "NSString+Extension.h"
 #import <CommonCrypto/CommonDigest.h>
 
-@implementation NSString (Hash)
+@implementation NSString (Extension)
 
 @dynamic MD5String;
 @dynamic SHA1String;
 @dynamic SHA256String;
 @dynamic SHA512String;
+@dynamic EncodeUrlString;
 
 - (NSString *)MD5String {
 	const char *original_str = [self UTF8String];
@@ -58,6 +59,15 @@
 	for (int i = 0; i < CC_SHA512_DIGEST_LENGTH; i++)
 		[output appendFormat:@"%02x", digest[i]];
 	return output;
+}
+
+- (NSString *)EncodeUrlString {
+	return (NSString *)
+	       CFBridgingRelease(CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, (CFStringRef)self, NULL, (CFStringRef)@"!*'();:@&=+$,/?%#[]", kCFStringEncodingUTF8));
+}
+
+- (CGSize)computeSizeWithFont:(UIFont *)font AndViewBounds:(CGRect)rect {
+	return [self boundingRectWithSize:CGSizeMake(rect.size.width, HUGE_VAL) options:NSStringDrawingUsesLineFragmentOrigin attributes:@{ NSFontAttributeName:font } context:nil].size;
 }
 
 @end
