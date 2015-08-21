@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		59802BC21B86ABF400868F1C /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59802BC11B86ABF400868F1C /* UIView+Extension.m */; };
 		59B0D2A11B3A9C3300F5D9CC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 59B0D2A01B3A9C3300F5D9CC /* Person.m */; };
 		59BEB1F11B419C2A00051283 /* SNDownLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 59BEB1F01B419C2A00051283 /* SNDownLoader.m */; };
 		59DD19AE1B405B3500D0B61B /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 59DD19AD1B405B3500D0B61B /* NSString+Extension.m */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		59802BC01B86ABF400868F1C /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		59802BC11B86ABF400868F1C /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		59B0D29F1B3A9C3300F5D9CC /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		59B0D2A01B3A9C3300F5D9CC /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		59BEB1EF1B419C2A00051283 /* SNDownLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SNDownLoader.h; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 				59DD19AD1B405B3500D0B61B /* NSString+Extension.m */,
 				59F0D0751B3901E5006C127A /* NSDate+Conver.h */,
 				59F0D0761B3901E5006C127A /* NSDate+Conver.m */,
+				59802BC01B86ABF400868F1C /* UIView+Extension.h */,
+				59802BC11B86ABF400868F1C /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -337,6 +342,7 @@
 				59DD19AE1B405B3500D0B61B /* NSString+Extension.m in Sources */,
 				59F0D03C1B37B783006C127A /* AppDelegate.m in Sources */,
 				59BEB1F11B419C2A00051283 /* SNDownLoader.m in Sources */,
+				59802BC21B86ABF400868F1C /* UIView+Extension.m in Sources */,
 				59F0D0391B37B783006C127A /* main.m in Sources */,
 				59F0D08D1B397371006C127A /* SNCommon.m in Sources */,
 				59F0D06B1B38E13D006C127A /* SNRandomUtil.m in Sources */,
