@@ -58,6 +58,7 @@ return _instance; \
 
 #import "NSDate+Conver.h"
 #import "NSString+Extension.h"
+#import "NSObject+SNDataKeeper.h"
 
 
 

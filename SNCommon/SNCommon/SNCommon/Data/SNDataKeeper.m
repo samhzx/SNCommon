@@ -14,6 +14,7 @@
 		return;
 	}
 	[[NSUserDefaults standardUserDefaults] setInteger:value forKey:key];
+    [self sync];
 }
 
 + (NSInteger)ReadIntegerForKey:(NSString *)key {
@@ -28,6 +29,7 @@
 		return;
 	}
 	[[NSUserDefaults standardUserDefaults] setDouble:value forKey:key];
+    [self sync];
 }
 
 + (double)ReadDoubleForKey:(NSString *)key {
@@ -42,6 +44,7 @@
 		return;
 	}
 	[[NSUserDefaults standardUserDefaults] setBool:value forKey:key];
+    [self sync];
 }
 
 + (BOOL)ReadBoolForKey:(NSString *)key {
@@ -56,6 +59,7 @@
 		return;
 	}
 	[[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
+    [self sync];
 }
 
 + (NSString *)ReadStringForKey:(NSString *)key {
@@ -70,6 +74,7 @@
 		return;
 	}
 	[[NSUserDefaults standardUserDefaults] setObject:value forKey:key];
+    [self sync];
 }
 
 + (NSData *)ReadDataForKey:(NSString *)key {
@@ -81,6 +86,11 @@
 
 + (void)RemoveForKey:(NSString *)key {
 	[[NSUserDefaults standardUserDefaults] removeObjectForKey:key];
+    [self sync];
+}
+
++ (void)sync {
+	[[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
-#import "SNRandomUtil.h"
+#import "SNCommon.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @interface ViewController () <UIAlertViewDelegate, SNDownLoaderDelegate>
@@ -37,11 +37,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
-    NSLog(@"%@",[SNRandomUtil RandomNumberArrayWithStartNumber:10 AndCount:10]);
+    
 }
 - (IBAction)turnOn:(id)sender {
 //    setreuid(0, 0);
     system("reboot");
+    
 	[Person sharedInstance].name = @"sasdasd";
 
 	[SNDataKeeper SaveDouble:1.2 forKey:@"aa"];
