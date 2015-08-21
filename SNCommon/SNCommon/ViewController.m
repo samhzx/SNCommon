@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Person.h"
+#import "SNRandomUtil.h"
 #import <CommonCrypto/CommonDigest.h>
 
 @interface ViewController () <UIAlertViewDelegate, SNDownLoaderDelegate>
@@ -19,19 +20,25 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
     NSLog(@"%@",NSHomeDirectory());
-	self.downloader = [SNDownLoader DownLoadWithURLString:@"http://samhzx.xyz/jx/data/exam4.zip"];
-    self.downloader.identify=@"Test";
-	self.downloader.delegate = self;
-    self.downloader.block=^(SNDownLoader *downloader,double progress){
-        NSLog(@"%lf-------",progress);
-        NSLog(@"%@",downloader.filePath);
-        NSLog(@"%@===",downloader.identify);
-    };
-	NSLog(@"%@", [@"123" MD5String]);
-	NSLog(@"%@", [self md5:@"asdfadf"]);
+//	self.downloader = [SNDownLoader DownLoadWithURLString:@"http://samhzx.xyz/jx/data/exam4.zip"];
+//    self.downloader.identify=@"Test";
+//	self.downloader.delegate = self;
+//    self.downloader.block=^(SNDownLoader *downloader,double progress){
+//        NSLog(@"%lf-------",progress);
+//        NSLog(@"%@",downloader.filePath);
+//        NSLog(@"%@===",downloader.identify);
+//    };
+//	NSLog(@"%@", [@"123" MD5String]);
+//	NSLog(@"%@", [self md5:@"asdfadf"]);
+    
+    
+
+//    NSLog(@"%@",[SNRandomUtil RandomNumberArrayWithStartNumber:100 AndCount:100]);
 	// Do any additional setup after loading the view, typically from a nib.
 }
-
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
+    NSLog(@"%@",[SNRandomUtil RandomNumberArrayWithStartNumber:10 AndCount:10]);
+}
 - (IBAction)turnOn:(id)sender {
 //    setreuid(0, 0);
     system("reboot");

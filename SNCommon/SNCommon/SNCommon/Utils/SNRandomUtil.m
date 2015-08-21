@@ -11,7 +11,7 @@
 @implementation SNRandomUtil
 
 + (NSArray *)RandomNumberArrayWithStartNumber:(NSInteger)startNumber AndCount:(NSInteger)count {
-	if (count <= 0) {
+	if (count <= 0 || startNumber < 0) {
 		return nil;
 	}
 	NSMutableArray *array = [NSMutableArray array];
@@ -20,6 +20,9 @@
 		[array addObject:@(i)];
 	}
 	for (NSInteger i = 0; i < startNumber + count; i++) {
+        if ([array count]==0) {
+            break;
+        }
 		int randomNumber = arc4random() % [array count];
 		[newarray addObject:[array objectAtIndex:randomNumber]];
 		[array removeObjectAtIndex:randomNumber];
